@@ -1,0 +1,60 @@
+/*selektor znacznika*/
+
+p {
+    color: green;
+}
+
+
+/*selektor id*/
+
+#pink {
+    color: pink;
+}
+
+
+/*selektor klasy*/
+
+.mate {
+    color: red;
+}
+
+
+/*laczenie aelektorow
+*/
+
+div,
+a,
+spa {
+    color: blue;
+}
+
+/*selektor bezposredniego elementu potomnego*/
+
+
+div#element-potomny > p  {color:darkmagenta;}
+
+
+/*selektor elementow potomnych*/
+
+div#element-spacja p {color:lime;}
+
+
+/*selektor bezposredniego rodzenstwa*/
+
+div#rodzenstwo > p + div
+{color:sienna;}
+
+/*selektor calego rodzenstwa*/
+
+div#cale-rodzenstwo > div ~ div {color:magenta;}
+
+
+
+/*selektor wykluczajacy*/
+ul > li.list-item:not(.last) {color:aqua;}
+
+
+
+/*selektor kolejenego elementu potomnego*/
+
+ol > li:nth-child(3) {background-color:lightgreen;}
